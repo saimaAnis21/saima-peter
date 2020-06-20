@@ -11,23 +11,45 @@
 
      }
 
+     header {
+         position: fixed;
+         top:0;
+         left:0;
+                  background-color: #cc0000;
+         color: white;
+          font-family: 'Exo 2', sans-serif;
+           padding: 1em;
+              width: 100%
+}
+
+header::after {
+              clear: both;
+                content: '';
+                display: table;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+    
    </style>
   <body>
 
     <h1>Hello World, we are software developers!</h1>
-    <h1 id="header"><img id="header-img" src="https://images.app.goo.gl/DAX7nm9cBwZyRdbu7"> 
+    <header id="header"><img id="header-img" src="https://images.app.goo.gl/DAX7nm9cBwZyRdbu7"> 
       <nav id="nav-bar"> 
         <a class="nav-link" href="#">my nav 1</a><br>
         <a class="nav-link" href="#">my nav 2</a><br>
         <a class="nav-link" href="#">my nav 3</a><br>
        
       </nav>
-
-      <textarea class="nav-link">Hellow there</textarea>
-      <video id="video" src="https://www.youtube.com/watch?v=JDkm1zIxJXU"></video>
       
-    </h1>
-    <form id="form" action="">
+      <video id="video" src="https://www.youtube.com/watch?v=JDkm1zIxJXU"></video>
+    </header>
+    
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
       <input id="email" placeholder="Email" type="email" name="email">
       <input id="submit" type="submit" value="Submit">
     </form>
