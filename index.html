@@ -8,7 +8,6 @@
    <style>
      .nav-link {
                  color:chartreuse;
-
      }
 
      header {
@@ -33,6 +32,10 @@ header::after {
     background-color: lightblue;
   }
 }
+
+.flex-container {
+  display: flex;
+}
     
    </style>
   <body>
@@ -40,12 +43,11 @@ header::after {
     <h1>Hello World, we are software developers!</h1>
     <header id="header"><img id="header-img" src="https://images.app.goo.gl/DAX7nm9cBwZyRdbu7"> 
       <nav id="nav-bar"> 
-        <a class="nav-link" href="#">my nav 1</a><br>
-        <a class="nav-link" href="#">my nav 2</a><br>
-        <a class="nav-link" href="#">my nav 3</a><br>
-       
+        <a class="nav-link" href="#home">Home</a><br>
+        <a class="nav-link" href="#about">About</a><br>
+        <a class="nav-link" href="#contact">Contact</a><br>
       </nav>
-      
+
       <video id="video" src="https://www.youtube.com/watch?v=JDkm1zIxJXU"></video>
     </header>
     
@@ -53,6 +55,13 @@ header::after {
       <input id="email" placeholder="Email" type="email" name="email">
       <input id="submit" type="submit" value="Submit">
     </form>
+
+    <div class="flex-container">
+      <ul>
+        <li>My Flex 1</li>
+        <li>My Flex 1</li>
+      </ul>
+    </div>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
